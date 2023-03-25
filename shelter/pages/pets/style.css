@@ -6,10 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -44,13 +42,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -58,10 +52,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -78,13 +70,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -102,10 +91,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -155,14 +142,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -170,8 +153,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -180,8 +162,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -189,9 +170,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -199,9 +180,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -210,9 +191,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -230,19 +211,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -263,20 +237,17 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -284,17 +255,15 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -303,10 +272,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -344,103 +311,89 @@ template {
 /********************************************FONT********************************************/
 /*******************************************ARIAL********************************************/
 @font-face {
-  font-family: 'Arial';
+  font-family: "Arial";
   src: url(../../assets/fonts/arial/arial-black.ttf) format("truetype");
   font-weight: 900;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Arial';
+  font-family: "Arial";
   src: url(../../assets/fonts/arial/arial-bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Arial';
+  font-family: "Arial";
   src: url(../../assets/fonts/arial/arial-bold-italic.ttf) format("truetype");
   font-weight: 700;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Arial';
+  font-family: "Arial";
   src: url(../../assets/fonts/arial/arial-italic.ttf) format("truetype");
   font-weight: 600;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Arial';
+  font-family: "Arial";
   src: url(../../assets/fonts/arial/arial-narrow-bold.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Arial';
+  font-family: "Arial";
   src: url(../../assets/fonts/arial/arial-regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Arial';
+  font-family: "Arial";
   src: url(../../assets/fonts/arial/arial-narrow-bold-italic.ttf) format("truetype");
   font-weight: 300;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Arial';
+  font-family: "Arial";
   src: url(../../assets/fonts/arial/arial-narrow-italic.ttf) format("truetype");
   font-weight: 200;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Arial';
+  font-family: "Arial";
   src: url(../../assets/fonts/arial/arial-narrow.ttf) format("truetype");
   font-weight: 100;
   font-style: normal;
 }
-
 /*****************************************Georgia**************************************************/
 @font-face {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   src: url(../../assets/fonts/georgia/georgia-regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   src: url(../../assets/fonts/georgia/georgia-italic.ttf) format("truetype");
   font-weight: 400;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   src: url(../../assets/fonts/georgia/georgia-bold-italic.ttf) format("truetype");
   font-weight: 600;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   src: url(../../assets/fonts/georgia/georgia-bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal;
 }
-
 /**********************************************************************************************/
 /*HEADER*/
 .header {
   width: 100%;
   padding: 30px 0px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #FFFFFF;
@@ -448,38 +401,23 @@ template {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .header__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   height: 60px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 56px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -488,7 +426,7 @@ template {
 }
 
 .header__logo-title {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -499,17 +437,13 @@ template {
 }
 
 .header__logo-subtitle {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   letter-spacing: 0.1em;
   color: #292929;
 }
@@ -521,21 +455,15 @@ template {
 .menu_list {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   height: 27px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   list-style: none;
 }
 
 .menu_list a {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -549,40 +477,27 @@ template {
   border-bottom: 3px solid #F1CDB3;
 }
 
-/*PETS*/
 .Pets {
   width: 100%;
   padding-top: 80px;
   padding-bottom: 100px;
   background: #F6F6F6;
 }
-
 .Pets__inner {
   width: 100%;
   height: 1162px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .Pets__inner-title {
   width: 400px;
   text-align: center;
   padding-bottom: 35px;
 }
-
 .Pets__inner-title h3 {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -591,69 +506,42 @@ template {
   color: #545454;
   margin: 0px;
 }
-
 .Pets__inner-slider-wrapper {
   width: 100%;
   height: 1162px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .Pets__inner-slider-wrapper .slider-inner {
   width: 100%;
   height: 930px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 30px;
-  -webkit-column-gap: 40px;
-          column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   padding-top: 25px;
 }
-
 .Pets__inner-slider-wrapper .slider-inner .slider-item {
   width: 270px;
   height: 435px;
   background: #FAFAFA;
   border-radius: 9px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .Pets__inner-slider-wrapper .slider-inner .slider-item:hover {
   cursor: pointer;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
-
-.Pets__inner-slider-wrapper .slider-inner .slider-item-title {
-  font-family: 'Georgia';
+.Pets__inner-slider-wrapper .slider-inner .slider-item .slider-item-title {
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -661,9 +549,8 @@ template {
   letter-spacing: 0.06em;
   color: #545454;
 }
-
-.Pets__inner-slider-wrapper .slider-inner .slider-item-button {
-  font-family: 'Georgia';
+.Pets__inner-slider-wrapper .slider-inner .slider-item .slider-item-button {
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -671,18 +558,44 @@ template {
   letter-spacing: 0.06em;
   color: #292929;
   padding: 15px 42.5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
   text-decoration: none;
   margin-bottom: 30px;
 }
-
-.Pets__inner-slider-wrapper .slider-inner .slider-item:hover .slider-item-button {
+.Pets__inner-slider-wrapper .slider-inner .slider-item .slider-item:hover .slider-item-button {
   background: #FDDCC4;
   border: none;
+}
+.Pets__inner-slider-wrapper .pagination {
+  display: flex;
+}
+.Pets__inner-slider-wrapper .pagination .button_paginator {
+  width: 52px;
+  height: 52px;
+  background: #F1CDB3;
+  border-radius: 100px;
+  margin-right: 20px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+.Pets__inner-slider-wrapper .pagination .inactive {
+  border: 2px solid #CDCDCD;
+  background: none;
+}
+.Pets__inner-slider-wrapper .pagination .active {
+  border: 2px solid #F1CDB3;
+  background: none;
 }
 
 /*FOOTER*/
@@ -693,29 +606,18 @@ template {
 }
 
 .footer__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer__contact {
   width: 278px;
   height: 234px;
   margin-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-family: 'Georgia';
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -733,30 +635,18 @@ template {
 
 .footer__contact-email {
   width: 251px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   color: #F1CDB3;
 }
 
 .footer__contact-phone {
   width: 239px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   color: #F1CDB3;
 }
@@ -765,17 +655,10 @@ template {
   width: 302px;
   height: 234px;
   margin-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-family: 'Georgia';
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -793,12 +676,8 @@ template {
 
 .footer__location-item {
   width: 302px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   color: #F1CDB3;
 }
@@ -827,35 +706,22 @@ template {
     padding-top: 60px;
   }
   .start__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   .start__content {
     margin-top: 0px;
     margin-bottom: 100px;
   }
   .start__content-button {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
   .start__content-image {
     width: 569px;
     height: 593px;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    justify-content: right;
     background: url(../../assets/images/start-screen-puppy.png);
     background-size: cover;
   }
@@ -886,32 +752,20 @@ template {
     height: 1457px;
     margin: 0 auto;
     padding: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   .Pets__inner-slider-wrapper .slider-inner {
     width: 100%;
     height: 1365px;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
-    -webkit-column-gap: 40px;
-            column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
     padding-top: 0px;
   }
   .Pets__inner-slider-wrapper .slider-inner .slider-item:nth-last-child(-n+2) {
@@ -923,16 +777,11 @@ template {
     padding-top: 30px;
   }
   .footer__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-column-gap: 60px;
-            column-gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
     row-gap: 65px;
   }
   .footer__contact {
@@ -945,7 +794,6 @@ template {
     margin-top: 0px;
   }
 }
-
 /*320px <= width < 768px*/
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .body._lock {
@@ -980,13 +828,12 @@ template {
     position: absolute;
     height: 10%;
     width: 100%;
-    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     background-color: #000;
   }
   .menu__icon::before,
   .menu__icon::after {
-    content: '';
+    content: "";
   }
   .menu__icon::before {
     top: 0;
@@ -996,8 +843,7 @@ template {
   }
   .menu__icon span {
     top: 50%;
-    -webkit-transform: scale(1) translate(0px, -50%);
-            transform: scale(1) translate(0px, -50%);
+    transform: scale(1) translate(0px, -50%);
   }
   .menu {
     position: fixed;
@@ -1005,35 +851,23 @@ template {
     left: 0;
     width: 100%;
     height: 100%;
-    -webkit-transform: translate(-100%, 0px);
-            transform: translate(-100%, 0px);
+    transform: translate(-100%, 0px);
     background-color: rgba(0, 0, 0, 0.9);
     padding: 248px 38px 248px 38px;
-    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     /* overflow: auto; */
   }
   .menu_list {
     -webkit-padding-start: 0px;
             padding-inline-start: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
   }
   .menu._active {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
   }
   .menu__icon._active span {
     background-color: #F1CDB3;
@@ -1078,32 +912,20 @@ template {
   .Pets__inner-slider-wrapper {
     width: 100%;
     height: 1459px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   .Pets__inner-slider-wrapper .slider-inner {
     width: 270px;
     height: 1365px;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     row-gap: 30px;
-    -webkit-column-gap: 0px;
-            column-gap: 0px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
     padding-top: 0px;
   }
   .Pets__inner-slider-wrapper .slider-item:nth-last-child(-n+5) {
@@ -1116,16 +938,11 @@ template {
     padding: 0px;
   }
   .footer__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-column-gap: 0px;
-            column-gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
     row-gap: 40px;
     padding-top: 30px;
   }
@@ -1133,9 +950,7 @@ template {
     width: 278px;
     height: 208px;
     margin: 0px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .footer__contact-title {
     width: 278px;
@@ -1157,12 +972,8 @@ template {
   }
   .footer__location-item {
     width: 302px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-decoration: none;
     color: #F1CDB3;
   }
@@ -1173,5 +984,4 @@ template {
     width: 260px;
     height: 269px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
