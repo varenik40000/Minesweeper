@@ -390,6 +390,10 @@ template {
   font-style: normal;
 }
 /**********************************************************************************************/
+html {
+  scroll-behavior: smooth;
+}
+
 /*HEADER*/
 .header {
   width: 100%;
@@ -577,6 +581,7 @@ template {
   background: #FDDCC4;
   border-radius: 100px;
   margin-right: 20px;
+  cursor: pointer;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -592,6 +597,7 @@ template {
 .Pets__inner-slider-wrapper .pagination .inactive {
   border: 2px solid #CDCDCD;
   background: none;
+  cursor: default;
 }
 .Pets__inner-slider-wrapper .pagination .active {
   border: 2px solid #F1CDB3;

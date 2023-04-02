@@ -399,6 +399,10 @@ template {
   cursor: pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   /* background: url(../../assets/images/start-screen-background.jpg) no-repeat; */
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
@@ -653,6 +657,7 @@ template {
   align-items: center;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
+  cursor: pointer;
 }
 .Pets__inner-slider-wrapper .slider-button img {
   padding: 23px 19px;
