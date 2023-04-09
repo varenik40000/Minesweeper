@@ -517,17 +517,21 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 .Pets__inner-slider-wrapper .slider-inner {
   width: 100%;
   height: 930px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(24, 1fr);
+  grid-template-columns: repeat(24, 1fr);
   row-gap: 30px;
   -moz-column-gap: 40px;
        column-gap: 40px;
   padding-top: 25px;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
 }
 .Pets__inner-slider-wrapper .slider-inner .slider-item {
   width: 270px;
@@ -543,6 +547,10 @@ html {
   cursor: pointer;
   background: #FFFFFF;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+.Pets__inner-slider-wrapper .slider-inner .slider-item img {
+  width: 270px;
+  height: 270px;
 }
 .Pets__inner-slider-wrapper .slider-inner .slider-item .slider-item-title {
   font-family: "Georgia";
@@ -846,14 +854,11 @@ html {
     height: 1365px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     row-gap: 30px;
     -moz-column-gap: 40px;
          column-gap: 40px;
     padding-top: 0px;
-  }
-  .Pets__inner-slider-wrapper .slider-inner .slider-item:nth-last-child(-n+2) {
-    display: none;
   }
   /*FOOTER*/
   .footer {
@@ -933,14 +938,11 @@ html {
     height: 1365px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(16, 1fr);
     row-gap: 30px;
     -moz-column-gap: 0px;
          column-gap: 0px;
     padding-top: 0px;
-  }
-  .Pets__inner-slider-wrapper .slider-item:nth-last-child(-n+5) {
-    display: none;
   }
   .Pets__inner-slider-wrapper .pagination {
     display: flex;
