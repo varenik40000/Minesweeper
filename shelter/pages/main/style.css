@@ -1129,9 +1129,11 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    transform: translate(-100%, 0px);
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 248px 38px 248px 38px;
+    transform: translate(100%, 0px);
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all 0.3s ease 0s;
     /* overflow: auto; */
   }
@@ -1149,12 +1151,15 @@ html {
   }
   .menu__icon._active span {
     background-color: #F1CDB3;
+    transform: translate(-10px, -9px) rotate(90deg);
   }
   .menu__icon._active::before {
     background-color: #F1CDB3;
+    transform: rotate(90deg);
   }
   .menu__icon._active::after {
     background-color: #F1CDB3;
+    transform: translate(10px, -16px) rotate(90deg);
   }
   .menu_list li {
     margin: 0px 0px 30px 0px;
@@ -1319,9 +1324,6 @@ html {
   }
   .header__inner {
     width: 257px;
-  }
-  .header__logo {
-    z-index: 5;
   }
   /*START*/
   .start {
