@@ -18,8 +18,8 @@ function render() {
              <div class="footer_github">© 2022 github</div>
              <div class="footer_rss">Rolling Scopes School</div>
              <div class="footer__contact">
-                 <a href="#" class="footer__contact-telegram"></a>
-                 <a href="#" class="footer__contact-discord"></a>
+                 <a href="https://t.me/vrnk_40000" class="footer__contact-telegram"></a>
+                 <a href=" https://discordapp.com/users/952964146071224330" class="footer__contact-discord"></a>
              </div>
          </div>
      </div>
