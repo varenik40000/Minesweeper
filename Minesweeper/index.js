@@ -40,7 +40,22 @@ function render() {
 
 render()
 
+function setMines() {
+  let minesNum = minesCount;
+  while (minesNum > 0) {
+    let rowIndex = Math.floor(Math.random() * rows),
+      columnIndex = Math.floor(Math.random() * columns),
+      id = `${rowIndex}-${columnIndex}`;
+    if (!minesLocation.includes(id)) {
+      minesLocation.push(id);
+      minesNum -= 1;
+    }
+  }
+  console.log('мины:', minesLocation)
+}
+
 function start() {
+  setMines()
   for (let i = 0; i < rows; i++) {
     let row = []
     for (let j = 0; j < columns; j++) {
