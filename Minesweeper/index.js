@@ -1,3 +1,14 @@
+let board = [],
+  rows = 8,
+  columns = 8,
+  minesCount = 5,
+  
+  // btnStart = document.querySelectorAll('.btn-start')[0],
+  minesLocation = [], 
+  tilesClicked = 0, 
+  flagEnabled = false,
+  gameOver = false;
+  
 function render() {
     let body = document.body;
     return body.innerHTML = `
@@ -29,3 +40,17 @@ function render() {
 
 render()
 
+function start() {
+  for (let i = 0; i < rows; i++) {
+    let row = []
+    for (let j = 0; j < columns; j++) {
+      let field = document.createElement('div');
+      field.id = `${i}-${j}`;
+      document.getElementById('board').append(field);
+      row.push(field)
+    }
+    board.push(row);
+  }
+  console.log('board', board);
+}
+start()
