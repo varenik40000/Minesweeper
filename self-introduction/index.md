@@ -1,4 +1,4 @@
-https://youtu.be/GB_X0oXXMHY
+Youtube-видео(https://youtu.be/GB_X0oXXMHY)
 
 Hello. My name is Rinat Ilyasov. I'm 36 years old. By education, an engineer is a designer. But at the very beginning of my path to mechanical engineering, I studied information technologies for 3 years. In the profession I could not find a job. After the army, I worked in ordinary positions : locksmith, machine operator. After I went to the university in absentia. In the end, I moved to the engine designer.
 
